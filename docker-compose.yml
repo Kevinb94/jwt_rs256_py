@@ -1,0 +1,8 @@
+services:
+  github_app_jwt:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/usr/src/app
+      - ./logs:/usr/src/app/logs
